@@ -16,5 +16,5 @@ void fill(
   dim3 blockSize(256);
   dim3 gridSize((n + blockSize.x - 1) / blockSize.x);
 
-  _fill<<<gridSize, blockSize,0,stream>>>(n, val, out);
+  _fill<<<gridSize,blockSize,0,stream>>>(n, val, out);
 }
